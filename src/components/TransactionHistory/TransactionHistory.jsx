@@ -29,8 +29,12 @@ const Transactions = ({ items }) => {
 export default Transactions;
 
 Transactions.propTypes = {
+    items: PropTypes.arrayOf(
+        PropTypes.shape({
     id: PropTypes.string,
     type: PropTypes.string,
     amount: PropTypes.string,
     currency: PropTypes.string
+    }))
+    
 }
