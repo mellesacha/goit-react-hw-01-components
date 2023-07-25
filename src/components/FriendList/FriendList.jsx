@@ -25,6 +25,6 @@ FriendList.propTypes = {
         PropTypes.shape({
            id: PropTypes.number.isRequired
        })
-    )
+    ).isRequired
     
 }
