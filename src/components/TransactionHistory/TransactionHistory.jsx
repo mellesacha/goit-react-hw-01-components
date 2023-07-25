@@ -31,10 +31,10 @@ export default Transactions;
 Transactions.propTypes = {
     items: PropTypes.arrayOf(
         PropTypes.shape({
-    id: PropTypes.string,
-    type: PropTypes.string,
-    amount: PropTypes.string,
-    currency: PropTypes.string
-    }))
+    id: PropTypes.string.isRequired,
+    type: PropTypes.string.isRequired,
+    amount: PropTypes.string.isRequired,
+    currency: PropTypes.string.isRequired
+    })).isRequired
     
 }
